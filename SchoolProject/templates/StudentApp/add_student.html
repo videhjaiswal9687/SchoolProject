@@ -1,0 +1,15 @@
+<form align="center" action="../add/" method="POST">
+    {% csrf_token %}
+    <h1 align="center">Student Record!!</h1>
+    <br> Student Name: <input type="text" name="name" placeholder="name"/>
+    <br> Student Rollno: <input type="text" name="rollno" placeholder="rollno"/>
+    <br> Student Course: <input type="text" name="course" placeholder="course"/>
+    <br> Student Fees: <input type="text" name="fee" placeholder="fee"/><br>
+    <input type="submit"/>
+    <br>
+    {% if message %}
+    <h3>{{message}}</h3>
+    {% endif %}
+</form>
+
+<br><br><a href='../' > Back</a> <br>
