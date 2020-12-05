@@ -1,0 +1,2 @@
+# SchoolProject
+Python Django Project
